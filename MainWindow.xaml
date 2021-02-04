@@ -1,0 +1,21 @@
+﻿<Window x:Class="Wpf_Exponentiation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Exponentiation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="220">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10 20 10 0" >
+            <Label Content="Введите число" Margin="0 0 9 0"/>
+            <TextBox x:Name="tbNumb" Width="50" Height="20"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10 20 10 0" >
+            <Label Content="Введите степень"/>
+            <TextBox x:Name="tbDegree" Width="50" Height="20"/>
+        </StackPanel>
+        <TextBlock x:Name="tbResText" Height="43" Margin="20,10,20,10"/>
+        <Button x:Name="tbResButt" Content="Вычислить"  Height="20" Click="ResButt" Margin="45,0,50,0"/>
+    </StackPanel>
+</Window>
